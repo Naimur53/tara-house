@@ -1,0 +1,13 @@
+.card-style{ 
+    transition: all .8s ease;
+    background: rgb(255, 255, 255);  
+    mix-blend-mode: difference;
+    clip-path: circle(0.4% at 50% 50%);
+
+
+
+}
+.card-main-wrap:hover .card-style{
+    clip-path: circle(70.7% at 50% 50%); 
+
+} 
