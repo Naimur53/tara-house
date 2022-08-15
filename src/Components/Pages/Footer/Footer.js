@@ -1,6 +1,7 @@
 import { Container, Grid, List, ListItem, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,28 +14,20 @@ const Footer = () => {
                     </Grid>
                     <Grid item xs={12} md={3}>
                         <List>
-                            <ListItem>About Tour</ListItem>
-                            <ListItem>Read our blog </ListItem>
-                            <ListItem>Sign up to see details</ListItem>
-                            <ListItem>Add your info</ListItem>
+                            <ListItem><Link to='/about'>About Tara House</Link></ListItem>
+                            <ListItem><Link to='/login'>Sign up to see details</Link></ListItem>
                         </List>
                     </Grid>
                     <Grid item xs={12} md={3}>
-                        <List>
-                            <ListItem>Get help</ListItem>
-                            <ListItem>Read FAQs</ListItem>
-                            <ListItem>View all cities</ListItem>
-                            <ListItem>Tour center near me</ListItem>
-                        </List>
+
                     </Grid>
                 </Grid>
                 <Box sx={{ display: { xs: 'block', md: 'flex' }, borderTop: '1px solid gray', mt: 3, py: 2 }}>
-                    <small style={{ margin: 'auto' }}>Copyright &#169; 2021 Hash tour</small>
+                    <small style={{ margin: 'auto' }}>Copyright &#169; 2022 Tara House</small>
                     <List sx={{ display: { xs: 'block', md: 'flex' }, width: '80%' }}>
-                        <ListItem>Privacy Policy</ListItem>
-                        <ListItem>Terms of Use</ListItem>
-                        <ListItem>Pricing</ListItem>
-                        <ListItem><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></ListItem>
+                        <ListItem><Link to='/Privacy'>Privacy Policy</Link></ListItem>
+                        <ListItem><Link to='/Term'> Terms of Use</Link></ListItem>
+
 
                     </List>
                 </Box>
